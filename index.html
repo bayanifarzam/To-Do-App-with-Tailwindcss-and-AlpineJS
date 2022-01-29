@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List with Tailwindcss & AlpineJS</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+
+ 
+
+  
+    <div class="w-96 h-auto bg-lime-500 mx-auto p-5 rounded my-20  scrollbar-thin scrollbar-thumb-lime-700 scrollbar-track-lime-900 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full" x-data="{items:[],task:''}">
+
+        <div class="w-full h-auto flex p-3 " x-data="{add(){this.items.push(task); this.task=''}}">
+            <input type="text" id="task" x-model="task" class="w-10/12 p-3 rounded-l-lg  focus:outline-lime-600" placeholder="Type a task" @keyup.enter="add()">
+            <button class="w-2/12 h-auto bg-blue-500 rounded-r-lg text-white text-2xl text-center" x-on:click="add()"><i class="fa fa-plus"></i></button>
+        </div>
+
+        <template x-for="item in items" :key="item" >
+            <div class="flex gap-5 px-3 py-2 my-2 bg-lime-600 rounded shadow-sm border-l-4 border-l-blue-500 text-white">
+                <p x-text="item" class="w-4/5"></p>
+                <button @click="items = items.filter(i => i !== item)" class="text-blue-500 rounded px-3 py-px my-px"><i class="fa fa-trash text-red-500"></i></button>
+            </div>
+        </template> 
+        
+
+    </div>
+
+
+
+   
+
+
+
+
+
+    <script src="public/bundle.js"></script>
+<script>
+
+</script>
+</body>
+</html>
