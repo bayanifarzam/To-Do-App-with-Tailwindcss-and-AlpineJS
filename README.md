@@ -5,10 +5,10 @@ This To-Do App is built with Tailwindcss and AlpineJS. All the resources of Tail
 
 
 - Your Task to Setup This App
--- 1- Clone the repo
--- 2- run "npm run build-css" to start the watchdog if you want to customize
--- 3- run "npm run alpinjs-build" to start AlpineJS watchdog, if you want to customize functionalities.
--- 4- Customize, Test and Enjoy
--- Done
+- 1- Clone the repo
+- 2- run "npm run build-css" to start the watchdog if you want to customize
+- 3- run "npm run alpinjs-build" to start AlpineJS watchdog, if you want to customize functionalities.
+- 4- Customize, Test and Enjoy
+- Done
 
 
