@@ -12,3 +12,5 @@ This To-Do App is built with Tailwindcss and AlpineJS. All the resources of Tail
 - Done
 
 
+![title](shots/Todoshot.png)
+
